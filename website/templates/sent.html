@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/Styles.css') }}">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" async defer></script>
+        <script src="{{ url_for('static', filename='scripts/scripts.js') }}" async defer></script>
+
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="icon" href="{{ url_for('static', filename='Images/Logo.png') }}" type = "image/x-icon">
+    </head>
+
+    <body>
+        <section class="emailSent">
+            <div>
+                <h1>Email has being sent</h1>
+                <p>You wil be redirected shortly<br>If not please click the link belloew</p>
+                <a href="{{ url_for('views.home_page') }}">Home Page</a>
+            </div>
+        </section>
+
+        <script>
+            setTimeout(() => { window.location.href = '{{ url_for("views.home_page") }}'; }, 4000);
+        </script>
+    </body>
+</html>

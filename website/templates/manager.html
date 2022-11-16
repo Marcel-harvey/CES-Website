@@ -1,0 +1,19 @@
+{% extends 'base_email.html' %}
+
+{% block title %}
+  Management
+{% endblock title %}
+
+{% block heading %}
+    Management
+{% endblock heading %}
+
+{% block fields %}
+    <div id="textArea" class="formFields">
+        <label for="text">What can I help with?</label>
+    </div> 
+
+    <div id="textArea" class="formFields">
+        <textarea name="manager" type="text" id="manager"></textarea>
+    </div>
+{% endblock fields %}

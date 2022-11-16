@@ -1,0 +1,487 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    View Specs
+{% endblock title %}
+
+
+{% block content %}
+    <section class="viewSpecs">
+        <div class="specsContainer">
+        {%  if machine == 'CPCD20' %}
+            <img src="{{ url_for('static', filename='Images/2 ton/side.jpg') }}" alt="Image of macine">
+            <h1>CPCD20</h1>
+
+            <h2>Engine Choices:</h2>
+            <ul>
+                <li>
+                    <p>Xinchai A498BPG (Diesel)</p>
+                </li>
+
+                <li>
+                    <p>Isuzu C240 (Diesel)</p>
+                </li>
+
+                <li>
+                    <p>Yanmar 4TNE98 (Diesel)</p>
+                </li>
+
+                <li>
+                    <p>Nissan K25 (Petrol / LPG)</p>
+                </li>
+            </ul>
+
+            <h2>Common Mast Choices:</h2>
+            <ul>
+                <li>
+                    <p>2 Stage - 3m height</p>
+                </li>
+
+                <li>
+                    <p>2 Stage - 4m height</p>
+                </li>
+
+                <li>
+                    <p>3 Stage - 4.7m height</p>
+                </li>
+            </ul>
+
+            <h2>Additional Information:</h2>
+            <ul>
+                <li>
+                    <p>Rated weight: 2 000kg</p>
+                </li>
+
+                <li>
+                    <p>Fork length: 1070cm - Can be changed on request</p>
+                </li>
+
+                <li>
+                    <p>Side shift as standard</p>
+                </li>
+
+                <li>
+                    <p>Attachments can be fitted</p>
+                </li>
+
+                <li>
+                    <p>Machine can be delivered</p>
+                </li>
+            </ul>
+
+        {%  elif machine == 'CLGA2020' %}
+        <img src="{{ url_for('static', filename='Images/2 ton electric/side.jpg') }}" alt="Image of macine">
+        <h1>CLGA2020</h1>
+
+        <h2>Common Mast Choices:</h2>
+        <ul>
+            <li>
+                <p>2 Stage - 3m height (Order from factory)</p>
+            </li>
+
+            <li>
+                <p>2 Stage - 4m height (Order from factory)</p>
+            </li>
+
+            <li>
+                <p>3 Stage - 4.7m height</p>
+            </li>
+        </ul>
+
+        <h2>Additional Information:</h2>
+        <ul>
+            <li>
+                <p>Rated weight: 2 000kg</p>
+            </li>
+
+            <li>
+                <p>Fork length: 1070cm - Can be changed on request</p>
+            </li>
+
+            <li>
+                <p>Side shift as standard</p>
+            </li>
+
+            <li>
+                <p>Machine can be delivered</p>
+            </li>
+        </ul>
+
+        {%  elif machine == 'CPCD25' %}
+        <img src="{{ url_for('static', filename='Images/2.5 ton/side.jpg') }}" alt="Image of macine">
+        <h1>CPCD25</h1>
+
+        <h2>Engine Choices:</h2>
+        <ul>
+            <li>
+                <p>Xinchai A498BPG (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Isuzu C240 (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Yanmar 4TNE98 (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Nissan K25 (Petrol / LPG)</p>
+            </li>
+        </ul>
+
+        <h2>Common Mast Choices:</h2>
+        <ul>
+            <li>
+                <p>2 Stage - 3m height</p>
+            </li>
+
+            <li>
+                <p>2 Stage - 4m height</p>
+            </li>
+
+            <li>
+                <p>3 Stage - 4.7m height</p>
+            </li>
+        </ul>
+
+        <h2>Additional Information:</h2>
+        <ul>
+            <li>
+                <p>Rated weight: 2 500kg</p>
+            </li>
+
+            <li>
+                <p>Fork length: 1070cm - Can be changed on request</p>
+            </li>
+
+            <li>
+                <p>Side shift as standard</p>
+            </li>
+
+            <li>
+                <p>Attachments can be fitted</p>
+            </li>
+
+            <li>
+                <p>Machine can be delivered</p>
+            </li>
+        </ul>
+
+        {%  elif machine == 'CPCD35' %}
+        <img src="{{ url_for('static', filename='Images/3.5 ton/side.jpg') }}" alt="Image of macine">
+        <h1>CPCD35</h1>
+
+        <h2>Engine Choices:</h2>
+        <ul>
+            <li>
+                <p>Xinchai A498BPG (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Isuzu C240 (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Yanmar 4TNE98 (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Nissan K25 (Petrol / LPG)</p>
+            </li>
+        </ul>
+
+        <h2>Common Mast Choices:</h2>
+        <ul>
+            <li>
+                <p>2 Stage - 3m height</p>
+            </li>
+
+            <li>
+                <p>2 Stage - 4m height</p>
+            </li>
+
+            <li>
+                <p>3 Stage - 4.7m height</p>
+            </li>
+        </ul>
+
+        <h2>Additional Information:</h2>
+        <ul>
+            <li>
+                <p>Rated weight: 3 500kg</p>
+            </li>
+
+            <li>
+                <p>Fork length: 1070cm - Can be changed on request</p>
+            </li>
+
+            <li>
+                <p>Side shift as standard</p>
+            </li>
+
+            <li>
+                <p>Attachments can be fitted</p>
+            </li>
+
+            <li>
+                <p>Machine can be delivered</p>
+            </li>
+        </ul>
+
+        {%  elif machine == 'CLG2050H' %}
+        <img src="{{ url_for('static', filename='Images/5 ton/side.jpg') }}" alt="Image of macine">
+        <h1>CLG2050H (Light)</h1>
+
+        <h2>Engine Choices:</h2>
+        <ul>
+            <li>
+                <p>Xinchai 4D35ZG31 (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Cummins B3.3 (Diesel)</p>
+            </li>
+        </ul>
+
+        <h2>Common Mast Choices:</h2>
+        <ul>
+            <li>
+                <p>2 Stage - 3m height</p>
+            </li>
+
+            <li>
+                <p>2 Stage - 4m height</p>
+            </li>
+
+            <li>
+                <p>3 Stage - 4.7m height</p>
+            </li>
+        </ul>
+
+        <h2>Additional Information:</h2>
+        <ul>
+            <li>
+                <p>Rated weight: 5 000kg</p>
+            </li>
+
+            <li>
+                <p>Fork length: 1070cm - Can be changed on request</p>
+            </li>
+
+            <li>
+                <p>Side shift as standard</p>
+            </li>
+
+            <li>
+                <p>Attachments can be fitted</p>
+            </li>
+
+            <li>
+                <p>Machine can be delivered</p>
+            </li>
+        </ul>
+
+        {%  elif machine == 'CLG2070H' %}
+        <img src="{{ url_for('static', filename='Images/7 ton/side.jpg') }}" alt="Image of macine">
+        <h1>CLG2070H</h1>
+
+        <h2>Engine Choices:</h2>
+        <ul>
+            <li>
+                <p>Yuchai YC4D100 (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Isuzu A-6BG1QC-02 (Diesel)</p>
+            </li>
+        </ul>
+
+        <h2>Common Mast Choices:</h2>
+        <ul>
+            <li>
+                <p>2 Stage - 3m height</p>
+            </li>
+
+            <li>
+                <p>2 Stage - 4m height</p>
+            </li>
+
+            <li>
+                <p>3 Stage - 4.7m height</p>
+            </li>
+        </ul>
+
+        <h2>Additional Information:</h2>
+        <ul>
+            <li>
+                <p>Rated weight: 7 000kg</p>
+            </li>
+
+            <li>
+                <p>Fork length: 1520cm - Can be changed on request</p>
+            </li>
+
+            <li>
+                <p>Dual wheel front axle</p>
+            </li>
+
+            <li>
+                <p>Side shift as standard</p>
+            </li>
+
+            <li>
+                <p>Attachments can be fitted</p>
+            </li>
+
+            <li>
+                <p>Machine can be delivered</p>
+            </li>
+        </ul>
+
+        {%  elif machine == 'F7030' %}
+        <img src="{{ url_for('static', filename='Images/Rough/side.jpg') }}" alt="Image of macine">
+        <h1>F7030</h1>
+
+        <h2>Engine Choices:</h2>
+        <ul>
+            <li>
+                <p>Xinchai A498BPG (Diesel)</p>
+            </li>
+        </ul>
+
+        <h2>Common Mast Choices:</h2>
+        <ul>
+            <li>
+                <p>2 Stage - 3m height</p>
+            </li>
+
+            <li>
+                <p>2 Stage - 4m height</p>
+            </li>
+
+            <li>
+                <p>3 Stage - 4.7m height</p>
+            </li>
+        </ul>
+
+        <h2>Additional Information:</h2>
+        <ul>
+            <li>
+                <p>Rated weight: 3 000kg</p>
+            </li>
+
+            <li>
+                <p>Fork length: 1070cm - Can be changed on request</p>
+            </li>
+
+            <li>
+                <p>Side shift as standard</p>
+            </li>
+
+            <li>
+                <p>Attachments can be fitted</p>
+            </li>
+
+            <li>
+                <p>Machine can be delivered</p>
+            </li>
+        </ul>
+
+        {%  elif machine == 'SRT' %}
+        <img src="{{ url_for('static', filename='Images/SRT/side.jpg') }}" alt="Image of macine">
+        <h1>CPCD25 SRT</h1>
+
+        <h2>Engine Choices:</h2>
+        <ul>
+            <li>
+                <p>Xinchai A498BPG (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Isuzu C240 (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Yanmar 4TNE98 (Diesel)</p>
+            </li>
+
+            <li>
+                <p>Nissan K25 (Petrol / LPG)</p>
+            </li>
+        </ul>
+
+        <h2>Common Mast Choices:</h2>
+        <ul>
+            <li>
+                <p>2 Stage - 3m height</p>
+            </li>
+
+            <li>
+                <p>2 Stage - 4m height</p>
+            </li>
+
+            <li>
+                <p>3 Stage - 4.7m height</p>
+            </li>
+        </ul>
+
+        <h2>Additional Information:</h2>
+        <ul>
+            <li>
+                <p>Rated weight: 2 500kg</p>
+            </li>
+
+            <li>
+                <p>Fork length: 1070cm - Can be changed on request</p>
+            </li>
+            
+
+            <li>
+                <p>Toolbox on rear counter weight</p>
+            </li>
+
+            <li>
+                <p>Used for rough terrain</p>
+            </li>
+
+            <li>
+                <p>Rough terrain pneumatic tyres as standard</p>
+            </li>
+
+            <li>
+                <p>Better ground clearance</p>
+            </li>
+
+            <li>
+                <p>Side shift as standard</p>
+            </li>
+
+            <li>
+                <p>Attachments can be fitted</p>
+            </li>
+
+            <li>
+                <p>Machine can be delivered</p>
+            </li>
+        </ul>
+
+        {%  elif machine == 'Stacker' %}
+        <img src="{{ url_for('static', filename='Images/Stacker/side.jpg') }}" alt="Image of macine">
+        <h1>Stacker</h1>
+
+        <h2>Additional Information:</h2>
+        <ul>
+            <li>
+                <p>Rated weight: 1 600kg</p>
+            </li>
+
+            <li>
+                <p>Machine can be delivered</p>
+            </li>
+        </ul>
+        {%  endif   %}
+        
+        </div>
+    </section>
+{% endblock content %}

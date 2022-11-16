@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    CES Pomona
+{% endblock title %}
+
+{% block content %}
+    <section class="landing">
+        <div class="background">
+            <!--    Top bacground image for logo    -->
+        </div>
+    </section>
+    
+    <section class="paragraph">
+        <h3>CES Pomona</h3>
+
+        <p>
+            We are the proud sole supplier of Liugong Forklifts and Materials Handling 
+            Equipment in South Africa. We offer clients customised industry leading finance
+            packages and aiding them in meeting their equipment requirements!
+        </p>
+
+        <p>
+            CES Pomona is committed to world-class quality and engineering. The result is easy operation, 
+            easy maintenance and easy ownership. Their products are assembled with world class components  
+            from suppliers you can trust like Cummins, ZF and Cascade with Xinchai, Yanmar, GM, Isuzu and  
+            Nissan engine options to name a few.
+        </p>
+    </section>
+
+    <section class="bulletpoint">
+        <div class="container">
+            <div class="row">
+                <!--    Photo to be placed  -->
+                <div class="col">
+                    <img  class="bulletPhoto" src="{{ url_for('static', filename='Images/Site/building.jpg') }}" alt="Tester">
+                </div>
+
+                <!--    Bulletpoints    -->
+                <div class="col">
+                    <div class="bulletList">
+                        <ul>
+                            <li>
+                                <p>
+                                    CES Forklift specialises in both short-term & long-term Forklift Rentals, 
+                                    the right machine at the right price 
+                                    for your requirements.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Parts and Service LiuGong Manufacture’s local presence in South Africa, 
+                                    facilitate on-hand technical support, superior access to parts, as well 
+                                    as speedy resolution of distribution issues, and warranty claims.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>LiuGong has proven themselves with over 2000 machines in operation in South Africa.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div id="serviceText" class="col">
+                    <div class="serviceText">
+                        <p>We service the machines at the customers premisis and recommend you do so every 250 hours.</p>                            
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img  class="servicePhoto" src="{{ url_for('static', filename='Images/Working/Electric.jpeg') }}" alt="Man servicing a forklift">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    Photos-->
+    <section class="modelPhoto">
+        <div class="modelContainer">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <h1>CPCD20</h1>
+                        <a href="{{ url_for('views.specs', machine='CPCD20')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/2 ton/front.jpg') }}" alt="Front">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h1>CLGA2020-T/C</h1>
+                        <a href="{{ url_for('views.specs', machine='CLGA2020')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/2 ton electric/front.jpg') }}" alt="Man servicing a forklift">             
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h1>CPCD25</h1>
+                        <a href="{{ url_for('views.specs', machine='CPCD25')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/2.5 ton/front.jpg') }}" alt="Man servicing a forklift">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h1>CPCD35</h1>
+                        <a href="{{ url_for('views.specs', machine='CPCD35')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/3.5 ton/front.jpg') }}" alt="Man servicing a forklift">                            
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h1>CLG205H (Light)</h1>
+                        <a href="{{ url_for('views.specs', machine='CLG2050H')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/5 ton/front.jpg') }}" alt="Man servicing a forklift">                           
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h1>CLG2070H</h1>
+                        <a href="{{ url_for('views.specs', machine='CLG2070H')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/7 ton/side.jpg') }}" alt="Man servicing a forklift">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h1>F7030</h1>
+                        <a href="{{ url_for('views.specs', machine='F7030')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/Rough/side.jpg') }}" alt="Man servicing a forklift">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h1>CPCD25 SRT</h1>
+                        <a href="{{ url_for('views.specs', machine='SRT')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/SRT/side.jpg') }}" alt="Man servicing a forklift">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h1>Electric Pallet Stacker</h1>
+                        <a href="{{ url_for('views.specs', machine='Stacker')  }}" target="_blank" rel="noopener noreferrer">
+                            <img class="front" src="{{ url_for('static', filename='Images/Stacker/front.jpg') }}" alt="Man servicing a forklift">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+        </div>
+    </section>
+
+{% endblock content %}

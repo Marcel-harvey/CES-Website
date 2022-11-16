@@ -1,0 +1,24 @@
+{% extends 'base_email.html' %}
+
+{% block title %}
+  Repairs
+{% endblock title %}
+
+{% block heading %}
+    Repairs
+{% endblock heading %}
+
+{% block fields %}
+<div class="formFields">
+    <label for="text">Machine Serial Number:</label>
+    <input name="serial" type="text" id="serial" placeholder="MT000000">
+</div> 
+
+<div id="textArea" class="formFields">
+    <label for="text">Describe your problem</label>
+</div> 
+
+<div id="textArea" class="formFields">
+    <textarea name="problem" type="text" id="problem"></textarea>
+</div>
+{% endblock fields %}

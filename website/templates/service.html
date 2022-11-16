@@ -1,0 +1,27 @@
+{% extends 'base_email.html' %}
+
+{% block title %}
+  Service
+{% endblock title %}
+
+{% block heading %}
+    Service
+{% endblock heading %}
+
+
+{% block fields %}
+<div class="formFields">
+    <label for="text">Machine Model:</label>
+    <input name="model" type="text" id="model" placeholder="CPCD25">
+</div>
+
+<div class="formFields">
+    <label for="text">Machine Serial Number:</label>
+    <input name="serial" type="text" id="serial" placeholder="MT000000">
+</div>
+
+<div class="formFields">
+    <label for="text">Machine Hours:</label>
+    <input name="hours" type="text" id="hours">
+</div>
+{% endblock fields %}

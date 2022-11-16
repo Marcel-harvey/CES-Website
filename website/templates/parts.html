@@ -1,0 +1,24 @@
+{% extends 'base_email.html' %}
+
+{% block title %}
+  Parts
+{% endblock title %}
+
+{% block heading %}
+    Parts
+{% endblock heading %}
+
+{% block fields %}
+<div class="formFields">
+    <label for="text">Machine Serial Number:</label>
+    <input name="serial" type="text" id="serial" placeholder="MT000000">
+</div> 
+
+<div id="textArea" class="formFields">
+    <label for="text">What are you looking for?</label>
+</div> 
+
+<div id="textArea" class="formFields">
+    <textarea name="parts" type="text" id="parts"></textarea>
+</div>
+{% endblock fields %}

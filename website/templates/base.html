@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/Styles.css') }}">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" async defer></script>
+        <script src="{{ url_for('static', filename='scripts/scripts.js') }}" async defer></script>
+
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="icon" href="{{ url_for('static', filename='Images/Logo.png') }}" type = "image/x-icon">
+    </head>
+
+    <body>
+
+        <section class="homePage">
+			<nav class="primNav">
+                <button class="navToggle" aria-controls="primaryLinks" aria-expanded="false">
+                </button>
+				<div data-visible="false" class="navigationLinks" id="nav">
+					<ul class="primaryLinks">
+						<li>
+                            <a href="{{ url_for('views.home_page') }}">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="{{ url_for('views.team') }}">Team</a>
+                        </li>
+
+						<li>
+                            <div class="subnav">
+                                <a onclick="expand()">Contact</a>
+                                <div class="subnavContent">
+                                    <a href="{{ url_for('views.sales') }}">Sales</a>
+                                    <a href="{{ url_for('views.service') }}">Service</a>
+                                    <a href="{{ url_for('views.parts') }}">Parts</a>
+                                    <a href="{{ url_for('views.repairs') }}">Repairs</a>
+                                </div>
+                            </div>
+                        </li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+
+        {% block content %}
+        {% endblock content %}
+
+        <section class="footer">
+            <div class="footerRow">
+                <div class="footerCol">
+                    <a href="{{ url_for('views.home_page') }}">
+                        <img class="footerLogo" src="{{ url_for('static', filename='Images/Site/CES logo2.png') }}" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="footerCol">
+                    <h4>CES Pomona <span>(PTY) LTD</span></h4>
+                </div>
+            </div>
+
+            <div class="footerContainer">
+                <div class="row">
+                    <div class="col">
+                        <h5>Contact Us!</h5>
+                        <ul>
+                            <li>
+                                <p><a href="{{ url_for('views.manager') }}">Bruce - Director</a> - 072 119 3597</p>
+                            </li>
+
+                            <li>
+                                <p><a href="{{ url_for('views.office') }}">Marcel - Office</a> - 010 109 1741</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5>Email Us!</h5>
+                        <ul>
+                            <li>
+                                <a href="{{ url_for('views.sales') }}">Sales</a>
+                            </li>
+
+                            <li>
+                                <a href="{{ url_for('views.parts') }}">Parts</a>
+                            </li>
+
+                            <li>
+                                <a href="{{ url_for('views.service') }}">Service</a>
+                            </li>
+
+                            <li>
+                                <a href="{{ url_for('views.repairs') }}">Repairs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <div class="colContainer">
+                            <ul>
+                                <li>
+                                    <a href="{{ url_for('views.home_page') }}">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://goo.gl/maps/ZqoY84Raa61YpQ6bA" target="_blank" rel="noopener noreferrer">Find us</a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ url_for('views.team') }}">TEAM</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=144&amp;height=139&amp;hl=en&amp;q=81 pomona road kempton park&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                <a href="https://mcpenation.com/">https://mcpenation.com</a>
+                            </div>
+                            <style>.mapouter{position:relative;text-align:right;width:100%;height:139px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:139px;}.gmap_iframe {height:139px!important;}</style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

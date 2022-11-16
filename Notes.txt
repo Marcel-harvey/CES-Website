@@ -1,0 +1,5 @@
+For google embeded map
+https://www.embedmymap.com
+
+pytohnanywhere
+https://medium.com/swlh/how-to-host-your-flask-app-on-pythonanywhere-for-free-df8486eb6a42

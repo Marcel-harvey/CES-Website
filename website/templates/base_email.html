@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="baseForms">
+        <div class="imageContainer">
+            <a href="{{ url_for('views.home_page') }}">
+                <img src="{{ url_for('static', filename='Images/Site/CES logo.png') }}" alt="Logo">
+            </a>
+        </div>
+
+        <div class="error">
+            {% if error %}
+                <h3>Please fill out all the fields</h3>
+            {% endif %}
+        </div>
+
+        <form method="POST" class="emailForm">
+            <h1 align="center">Please enter your information bellow</h1>
+            <h2 align="center">{% block heading %} {% endblock heading %}</h2>
+
+            <div>
+                <div class="formContainer">
+                    <div class="formFields">
+                        <label for="text">Name:</label>
+                        <input name="name" type="text" id="name"></input>
+                    </div>
+                    
+                        <div class="formFields">
+                        <label for="text">Surname:</label>
+                        <input name="surname" type="text" id="surname"></input>     
+                    </div>
+                    
+                    <div class="formFields">
+                        <label for="text">Company Name:</label>
+                        <input name="company" type="text" id="company">
+                    </div>
+                    
+                    <div class="formFields">
+                        <label for="text">Contact Number:</label>
+                        <input name="number" type="text" id="number">
+                    </div>
+                    
+                    <div class="formFields">
+                        <label for="text">Email Address:</label>
+                        <input name="email" type="email" id="email" placeholder="example@example.com">
+                    </div>
+                    {% block fields %} {% endblock fields %}
+                </div>
+            </div>
+
+            <div class="container">
+                {% if success %}
+                <div>
+                    <p>Email has being sent</p>
+                </div>
+                {% endif %}
+                <div class="buttons">          
+                    <button class="heroButton" type="submit">SUBMIT</button>
+                </div>
+        </form>
+    </section>
+{% endblock content %}

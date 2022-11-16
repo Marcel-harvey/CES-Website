@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    The Team
+{% endblock title %}
+
+{% block content %}
+
+    <section class="team">
+        <a href="{{ url_for('views.home_page') }}">
+            <img src="{{ url_for('static', filename='Images/Site/CES logo.png') }}" alt="">
+        </a>
+        <h1>Meet The Team!</h1>
+
+        <div class="teamContainer">
+            <div class="teamRow">
+                <div class="teamCol">
+                    <h4>Director</h4>
+                    <img src="{{ url_for('static', filename='Images/staff/bruce.jpeg') }}" alt="Photo of Manager">
+                </div>
+
+                <div class="teamCol">
+                    <h5>Bruce Buckland</h5>
+                    <p>
+                        Contact: 072 119 3597<br>
+                        Email: bruce@cesforklift.co.za
+                    </p>
+                </div>
+            </div>
+
+            <div class="teamRow">
+                <div class="teamCol">
+                    <h4>Sales</h4>
+                    <img src="{{ url_for('static', filename='Images/staff/travis.jpeg') }}" alt="Photo of Sales rep">
+                </div>
+
+                <div class="teamCol">
+                    <h5>Travis de Leur</h5>
+                    <p>
+                        Contact: 082 865 1000<br>
+                        Email: travis@cesforklift.co.za
+                    </p>
+                </div>
+            </div>
+
+            <div class="teamRow">
+                <div class="teamCol">
+                    <h4>Admin / Receptionist</h4>
+                    <img src="{{ url_for('static', filename='Images/staff/milindi.jpeg') }}" alt="Photo of Receptionist ">
+                </div>
+
+                <div class="teamCol">
+                    <h5>Milindi du Preez</h5>
+                    <p>
+                        Contact: 010 109 1741<br>
+                        Email: pomona@cesforklift.co.za
+                    </p>
+                </div>
+            </div>
+
+            <div class="teamRow">
+                <div class="teamCol">
+                    <h4>Workshop / Parts / Service</h4>
+                    <img src="{{ url_for('static', filename='Images/staff/marcel.jpeg') }}" alt="Photo of Receptionist ">
+                </div>
+
+                <div class="teamCol">
+                    <h5>Marcel Harvey</h5>
+                    <p>
+                        Contact: 071 453 5989<br>
+                        Email: parts.service@cesforklift.co.za
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

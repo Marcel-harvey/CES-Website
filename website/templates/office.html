@@ -1,0 +1,19 @@
+{% extends 'base_email.html' %}
+
+{% block title %}
+  Office
+{% endblock title %}
+
+{% block heading %}
+    Office
+{% endblock heading %}
+
+{% block fields %}
+<div id="textArea" class="formFields">
+    <label for="text">What can I help you with?</label>
+</div> 
+
+<div id="textArea" class="formFields">
+    <textarea name="office" type="text" id="office"></textarea>
+</div>
+{% endblock fields %}
