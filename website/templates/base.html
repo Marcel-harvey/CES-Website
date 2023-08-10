@@ -13,38 +13,40 @@
 
         <title>{% block title %}{% endblock title %}</title>
         <link rel="icon" href="{{ url_for('static', filename='Images/Logo.png') }}" type = "image/x-icon">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+          <!-- Add Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" async defer></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" async defer></script>
     </head>
 
     <body>
 
         <section class="homePage">
-			<nav class="primNav">
-                <button class="navToggle" aria-controls="primaryLinks" aria-expanded="false">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="{{ url_for('views.home_page') }}"><img src="{{ url_for('static', filename='Images/Site/ces logo2.png') }}" alt="CES logo"></a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-				<div data-visible="false" class="navigationLinks" id="nav">
-					<ul class="primaryLinks">
-						<li>
-                            <a href="{{ url_for('views.home_page') }}">Home</a>
-                        </li>
 
-                        <li>
-                            <a href="{{ url_for('views.team') }}">Team</a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{{ url_for('views.home_page') }}">Home</a>
+                    </li>
 
-						<li>
-                            <div class="subnav">
-                                <a onclick="expand()">Contact</a>
-                                <div class="subnavContent">
-                                    <a href="{{ url_for('views.sales') }}">Sales</a>
-                                    <a href="{{ url_for('views.service') }}">Service</a>
-                                    <a href="{{ url_for('views.parts') }}">Parts</a>
-                                    <a href="{{ url_for('views.repairs') }}">Repairs</a>
-                                </div>
-                            </div>
-                        </li>
-					</ul>
-				</div>
-			</nav>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('views.team') }}">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a> <!-- repairs, service, sales etc-->
+                    </li>
+                  </ul>
+                </div>
+              </nav>
 		</section>
 
         {% block content %}
