@@ -29,6 +29,10 @@ p {
 
 
 /* Navbar section */
+.home_page a:hover{
+    text-decoration: underline;
+}
+
 .navbar-brand img {
     height: 9vh;
     margin: 0 3vw;
@@ -38,6 +42,7 @@ p {
 #navbarNav {
     margin-left: 5vw;
 }
+
 
 
 
