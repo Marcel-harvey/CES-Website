@@ -27,7 +27,7 @@ p {
 }
 
 
-
+/* Base page styling */
 /* Navbar section */
 .home_page a:hover{
     text-decoration: underline;
@@ -46,6 +46,50 @@ p {
 .nav-link {
     color: white !important;
 }
+
+/* Footer Section */
+.footer_container {
+    padding-top: var(--spacingMail);
+}
+
+.footer_logo {
+    margin: auto;
+}
+
+.footer_logo h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.footer_logo img {
+    width: auto;
+    height: 15vh;
+}
+
+.footer_column {
+    display: flex;
+    flex-basis: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.map_container {
+    width: 100%;
+}
+
+#footer_contact {
+    color: white;
+}
+
+#footer_contact ul{
+    list-style-type: none;
+}
+
+#footer_contact a {
+    color: white;
+}
+
 
 
 
