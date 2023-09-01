@@ -8,7 +8,7 @@
 /* Hide all the overflow (for mobile navbar) */
 body {
     overflow-x: hidden;
-    background-image: linear-gradient(45deg, rgba(217, 218, 219, 1), rgba(210, 212, 214), rgba(106, 144, 247, 1));
+    background-color: var(--bgColor);
 }
 
 h3 {
@@ -24,7 +24,10 @@ p {
 :root {
     --spacing: 5em;
     --spacingMail: 1em;
+    --bgColor: #e0dfde;
+    --footerColor: #333333;
 }
+
 
 
 /* Base page styling */
@@ -47,7 +50,17 @@ p {
     color: white !important;
 }
 
+
+
 /* Footer Section */
+.footer{
+    background-color: var(--footerColor);    
+    color: rgb(217, 217, 217);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3vh;
+}
+
 .footer_container {
     padding-top: var(--spacingMail);
 }
@@ -72,6 +85,7 @@ p {
     flex-basis: 90%;
     margin: auto;
     justify-content: space-evenly;
+    padding-top: var(--spacingMail);
 }
 
 .map_container {
@@ -82,6 +96,10 @@ p {
     color: white;
 }
 
+#footer_contact h5 {
+    text-align: center;
+}
+
 #footer_contact ul{
     list-style-type: none;
 }
@@ -90,20 +108,14 @@ p {
     color: white;
 }
 
+#footer_contact p {
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#footer_contact h6 {
+    margin-bottom: 0;
+    text-align: center;
+}
 
 
 
@@ -114,7 +126,7 @@ p {
 
 .background {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)),
-    url(/static/Images/Site/Homescreen.jpg);
+    url(/static/Images/Site/Homescreen-No-logo.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -319,96 +331,6 @@ p {
 }
 
 
-/*  Footer section  */
-.footer {
-    background-color: rgb(51, 51, 51);
-    color: rgb(217, 217, 217);
-    height: 100%;
-    width: 100%;
-    padding-bottom: 3vh;
-}
-
-.footerRow {
-    display: flex;
-    margin-bottom: 1vh;
-    align-items: center;
-    justify-content: center;
-}
-
-.footerCol {
-    flex-direction: row;
-    width: 25%;
-}
-
-@media(max-width: 35em) {
-    .footerRow {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footerLogo {
-        display: block;
-        margin: auto;
-    }
-
-    .footerContainer {
-        text-align: center;
-    }
-}
-
-.footerCol span {
-    font-size: 12px;
-    text-decoration: none;
-    font-style: italic;
-}
-
-.footerLogo {
-    width: auto;
-    height: 15vh;
-}
-
-.footer h4 {
-    text-decoration: underline;
-}
-
-.footerContainer {
-    width: 90%;
-    margin: auto;
-}
-
-.footerContainer h5 {
-    font-size: 16px;
-    font-weight: 650;
-    margin-bottom: 2vh;
-}
-
-.footerContainer li {
-    list-style: circle;
-    margin-left: 2vw;
-}
-
-.footerContainer a {
-    text-decoration: none;
-    color: rgb(217, 217, 217);
-}
-
-.footerContainer a:hover {
-    color: rgb(0, 5, 102);
-    text-decoration: underline;
-    transition: 0.2s;
-}
-
-.colContainer {
-    margin-top: 6vh;
-}
-
-.colContainer ul li {
-    list-style: none;
-}
-
-.col ul li {
-    list-style: none;
-}
 
 
 /*  Team Page   */
