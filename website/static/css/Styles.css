@@ -131,7 +131,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    min-height: 80vh;
+    min-height: 85vh;
     width: 100%;
 }
 
@@ -228,6 +228,25 @@ p {
     .bulletList {
         width: 100%;
     }
+}
+
+
+/* Extra services Section */
+.extra_services {
+    width: 100%;
+    margin-bottom: var(--spacing);
+}
+
+.extra_services h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: var(--spacingMail);
+}
+
+.extra_container h6 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 
