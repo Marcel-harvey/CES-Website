@@ -261,36 +261,6 @@ p {
 }
 
 
-/*  Service with photo  */
-.service {
-    margin-bottom: var(--spacing);
-}
-
-.servicePhoto {
-    display: block;
-    width: 50%;
-    height: auto;
-    margin: auto;
-    border-radius: 50%;
-}
-
-.serviceText  {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: right;
-}
-
-#serviceText {
-    width: 80%;
-}
-
-@media(max-width: 35em) {
-    .service .container .row .col img {
-        width: 70%;
-    }
-}
-
 
 /*  Photos with model name  */
 .modelPhoto {
