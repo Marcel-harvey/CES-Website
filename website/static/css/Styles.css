@@ -261,6 +261,30 @@ p {
 }
 
 
+/* Home contact section */
+.home_contact {
+    margin: auto;
+    text-align: center;
+    padding-bottom: var(--spacing);
+}
+
+.contact_info ul li {
+    margin-bottom: 2rem;
+}
+
+.contact_info h6 {
+    font-weight: bold;
+}
+
+.contact_info ul li p {
+    margin-bottom: 0;
+}
+
+.contact_info ul li p span {
+    font-weight: bold;
+}
+
+
 
 /*  Photos with model name  */
 .modelPhoto {
