@@ -36,6 +36,12 @@ p {
     text-decoration: underline;
 }
 
+.home_page h3 {
+    text-transform: uppercase;
+    margin-right: 3em;
+    color: black;
+}
+
 .navbar-brand img {
     height: 9vh;
     margin: 0 3vw;
@@ -43,11 +49,13 @@ p {
 }
 
 #navbarNav {
-    margin-left: 5vw;
+    padding-left: 5vw;
 }
 
 .nav-link {
     color: white !important;
+    margin-right: 2em;
+    margin-left: 0;
 }
 
 
