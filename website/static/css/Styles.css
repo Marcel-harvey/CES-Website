@@ -293,6 +293,29 @@ p {
 }
 
 
+/* Imiage Slider */
+.image_slider {
+    width: 80%;
+    margin: auto;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 /*  Photos with model name  */
 .modelPhoto {
