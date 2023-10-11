@@ -294,14 +294,20 @@ p {
 
 
 /* Imiage Slider */
-.image_slider {
+.image_grid {
     width: 80%;
     margin: auto;
+    padding-bottom: var(--spacing);
+}
+
+.image_grid h2 {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
   }
 
@@ -310,81 +316,10 @@ p {
     height: auto;
   }
 
-.carousel-item img {
-  width: 100%;
-  height: auto;
+.last_row {
+    /* Posistion that last column must start (temp) */
+    grid-column: 2;
 }
-
-
-
-/*  Photos with model name  */
-.modelPhoto {
-    width: 100%;
-    height: 100%;
-}
-
-.modelContainer {
-    width: 100%;
-    padding-top: 2vh;
-    padding-bottom: 100px;
-}
-
-.swiper {
-    width: 60%;
-    height: 65vh;
-}
-
-.swiper-slide {
-    width: 100%;
-    height: 100vh;
-    padding-bottom: 3vh;
-}
-
-.swiper-slide h1 {
-    text-align: center;
-    margin-bottom: 2vh;
-    text-decoration: underline;
-    font-style: italic;
-}
-
-.swiper-slide img {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: -5px 3px 3px black;
-}
-
-.swiper-wrapper {
-    padding-bottom: 2vh;
-}
-
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
-    color: rgb(255, 255, 255);
-    transition: 0.2s;
-}
-
-.swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover {
-    color: rgb(80, 80, 110);
-    scale: 1.2;
-}
-
-.swiper .swiper-pagination-bullet-active {
-    background: rgb(51, 51, 51);
-}
-
-@media(max-width: 35em) {
-    .swiper-slide {
-        width: 100%;
-        padding-bottom: 5vh;
-    }
-
-    .swiper .swiper-button-prev, .swiper .swiper-button-next {
-        display: none;
-    }
-}
-
 
 
 

@@ -144,7 +144,8 @@
 
 
     <!-- Image Slider -->
-    <section class="image_slider">
+    <section class="image_grid">
+        <h2>A quick view of our machine models</h2>
         <div class="photo-grid">
             <img src="{{ url_for('static', filename='Images/2 ton/front.jpg') }}" alt="Image 1">
             <img src="{{ url_for('static', filename='Images/2 ton electric/front.jpg') }}" alt="Image 2">
@@ -152,92 +153,11 @@
             <img src="{{ url_for('static', filename='Images/3.5 ton/front.jpg') }}" alt="Image 3">
             <img src="{{ url_for('static', filename='Images/5 ton/front.jpg') }}" alt="Image 3">
             <img src="{{ url_for('static', filename='Images/7 ton/side.jpg') }}" alt="Image 3">
+            <img src="{{ url_for('static', filename='Images/12 ton/side.jpg') }}" alt="Image 3">
             <img src="{{ url_for('static', filename='Images/Rough/side.jpg') }}" alt="Image 3">
-            <img src="{{ url_for('static', filename='Images/SRT/side.jpg') }}" alt="Image 3">
+            <img class="last_row" src="{{ url_for('static', filename='Images/SRT/side.jpg') }}" alt="Image 3">
             <img src="{{ url_for('static', filename='Images/Stacker/front.jpg') }}" alt="Image 3">
           </div>
-    </section>
-
-
-    <!--    Photos-->
-    <section class="modelPhoto">
-        <div class="modelContainer">
-
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <h1>CPCD20</h1>
-                        <a href="{{ url_for('views.specs', machine='CPCD20')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/2 ton/front.jpg') }}" alt="Front">
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h1>CLGA2020-T/C</h1>
-                        <a href="{{ url_for('views.specs', machine='CLGA2020')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/2 ton electric/front.jpg') }}" alt="Man servicing a forklift">             
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h1>CPCD25</h1>
-                        <a href="{{ url_for('views.specs', machine='CPCD25')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/2.5 ton/front.jpg') }}" alt="Man servicing a forklift">
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h1>CPCD35</h1>
-                        <a href="{{ url_for('views.specs', machine='CPCD35')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/3.5 ton/front.jpg') }}" alt="Man servicing a forklift">                            
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h1>CLG205H (Light)</h1>
-                        <a href="{{ url_for('views.specs', machine='CLG2050H')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/5 ton/front.jpg') }}" alt="Man servicing a forklift">                           
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h1>CLG2070H</h1>
-                        <a href="{{ url_for('views.specs', machine='CLG2070H')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/7 ton/side.jpg') }}" alt="Man servicing a forklift">
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h1>F7030</h1>
-                        <a href="{{ url_for('views.specs', machine='F7030')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/Rough/side.jpg') }}" alt="Man servicing a forklift">
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h1>CPCD25 SRT</h1>
-                        <a href="{{ url_for('views.specs', machine='SRT')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/SRT/side.jpg') }}" alt="Man servicing a forklift">
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h1>Electric Pallet Stacker</h1>
-                        <a href="{{ url_for('views.specs', machine='Stacker')  }}" target="_blank" rel="noopener noreferrer">
-                            <img class="front" src="{{ url_for('static', filename='Images/Stacker/front.jpg') }}" alt="Man servicing a forklift">
-                        </a>
-                    </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            
-        </div>
     </section>
 
 {% endblock content %}
