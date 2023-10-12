@@ -403,6 +403,12 @@ def sent(email, page):
 
     else:
         return redirect(url_for(f'views.{page}'))
+    
+
+@views.route("/machine-model", methods=['GET', 'POST'])
+def models():
+
+    return render_template("models.html")
 
 
 @views.route("/machine-specs/<machine>", methods=['GET', 'POST'])

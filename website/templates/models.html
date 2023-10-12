@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Forklift Models
+{% endblock title %}
+
+{% block content %}
+    <section class="forklift_models">
+        <div class="model">
+            <h3>CPCD20</h3>
+            <img src="{{ url_for('static', filename='Images/2 ton/front.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/2 ton/side.jpg') }}" alt="">
+        </div>
+
+        <div class="model">
+            <h3>CLG2020A-S/E</h3>
+            <img src="{{ url_for('static', filename='Images/2 ton electric/front.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/2 ton electric/side.jpg') }}" alt="">
+        </div>
+
+        <div class="model">
+            <h3>cpcd25</h3>
+            <img src="{{ url_for('static', filename='Images/2.5 ton/front.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/2.5 ton/side.jpg') }}" alt="">
+        </div>
+
+        <div class="model">
+            <h3>cpcd25 srt</h3>
+            <img src="{{ url_for('static', filename='Images/srt/front.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/srt/side.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/srt/rear.jpg') }}" alt="">
+        </div>
+
+        <div class="model">
+            <h3>cpcd35</h3>
+            <img src="{{ url_for('static', filename='Images/3.5 ton/front.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/3.5 ton/side.jpg') }}" alt="">
+        </div>
+
+        <div class="model">
+            <h3>clg2050h-light</h3>
+            <img src="{{ url_for('static', filename='Images/5 ton/front.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/5 ton/side.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/5 ton/inside.jpg') }}" alt="">
+        </div>
+
+        <div class="model">
+            <h3>clg2070h</h3>
+            <img src="{{ url_for('static', filename='Images/7 ton/front.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/7 ton/side.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/7 ton/rear.jpg') }}" alt="">
+        </div>
+
+        <div class="model">
+            <h3>clg2120h</h3>
+            <img src="{{ url_for('static', filename='Images/12 ton/front.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/12 ton/side.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/12 ton/rear.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='Images/12 ton/angle.jpg') }}" alt="">
+        </div>
+    </section>
+{% endblock content %}
