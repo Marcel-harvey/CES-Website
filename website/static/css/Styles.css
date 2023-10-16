@@ -331,7 +331,10 @@ p {
 }
 
 .model {
-    margin-top: var(--spacing);
+    margin-top: var(--spacingMail);
+    background-color: rgb(242, 245, 245);
+    box-shadow: 2px 6px 10px black;
+    border: none;
 }
 
 .model h3 {
@@ -345,7 +348,23 @@ p {
     padding: 10px;
     display: inline-block;
     vertical-align: middle;
+    border-radius: 5%;
 }
+
+.model h5 {
+    color: black;
+    text-transform: uppercase;
+}
+
+.model ul {
+    line-height: 0.5;
+    list-style: none;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+    text-transform: capitalize;
+}
+
 
 
 /*  Team Page   */
