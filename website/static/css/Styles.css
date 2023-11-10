@@ -328,6 +328,7 @@ p {
     width: 90%;
     margin: auto;
     text-align: center;
+    margin-bottom: var(--spacing);
 }
 
 .model {
@@ -340,6 +341,7 @@ p {
 .model h3 {
     text-align: center;
     text-transform: uppercase;
+    padding-top: 2vh;
 }
 
 .model img {
@@ -354,6 +356,7 @@ p {
 .model h5 {
     color: black;
     text-transform: uppercase;
+    padding-bottom: 2vh;
 }
 
 .model ul {
